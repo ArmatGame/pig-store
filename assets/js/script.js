@@ -53,8 +53,6 @@ closeButtonCartSlider.addEventListener("click",function () {
   scrollCartSlider.style.overflow = "hidden";
 });
 
-
-
 // POPUP
 let popUp = document.querySelector(".popUp");
 function showAndHiddenPopUp(i) {
@@ -77,11 +75,11 @@ function showAndHiddenPopUp(i) {
 
   popUp.style.cssText = `
     animation: popUpOn .5s 0s 1;
-    transform: translateY(-60%);
-  -webkit-transform: translateY(-60%);
-  -moz-transform: translateY(-60%);
-  -ms-transform: translateY(-60%);
-  -o-transform: translateY(-60%);
+    transform: translateY(-45%);
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  -o-transform: translateY(-45%);
   `;
 
   let closePopUp = document.querySelector(".popUp .popUpCard i");
@@ -148,7 +146,6 @@ if (localStorage.product != null) {
 } else {
   Cart = [];
 }
-
 
 function checkCartCounter() {
   if (cartCounter === 0) {
@@ -228,14 +225,22 @@ let search = document.querySelector(".form-control");
 let researchResults = document.querySelector(".research-results");
 search.addEventListener("keyup", function () {
   tasks.products.map((item, i) => {
-    if (item.title.toUpperCase().includes(search.value.toUpperCase())) {
+    // if (typeof item.title === 'string' && item.title.toUpperCase().startsWith(search.value.toUpperCase())) {
+    //   // researchResults.innerHTML = "";
+    //   researchResults.style.display = "block";
+    //   researchResults.innerHTML += `
+    //     <h6>${item.title}</h6>
+    //   `
+    // }
+
+    if (typeof item.title === 'string' && item.title.toUpperCase().includes(search.value.toUpperCase())) {
       // researchResults.innerHTML = "";
       researchResults.style.display = "block";
       researchResults.innerHTML += `
         <h6>${item.title}</h6>
       `
     }
-
+    
     if (search.value === "") {
       researchResults.innerHTML = "";
       researchResults.style.display = "none";
@@ -249,38 +254,3 @@ setInterval(() => {
     researchResults.style.display = "none";
   }
 }, 1000);
-
-// function deleteProductFromCart(k,o) {
-//   Cart.splice(k,1);
-//   console.log(o)
-//   Cart.map(function (item, i) {
-//     tasks.products[o].id === item.id? cartCounter -= item.quantity : ""
-//   });
-//   cartCounterDiv.innerHTML = cartCounter;
-//   checkCartCounter();
-//   showProductInCart();
-// }
-
-
-
-
-// // ADD PRODUCT IN CART
-// let Cart = [];
-// let cartCounterDiv = document.querySelector(".cartCounter div");
-// let cartCounter = 0;
-// function checkCartCounter() {
-//   if (cartCounter === 0) {
-//     cartCounterDiv.style.display = "none";
-//   } else if (cartCounter !== 0) {
-//     cartCounterDiv.style.display = "flex";
-//   }
-// }
-
-// function addProductInCart(i) {
-  //   Cart.push(tasks.products[i]);
-  //   cartCounter += 1;
-  //   cartCounterDiv.innerHTML = cartCounter;
-//   checkCartCounter();
-//   showProductInCart();
-// }
- 
