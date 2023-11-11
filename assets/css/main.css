@@ -376,6 +376,16 @@ nav .detels {
   z-index: 50;
 }
 
+/* @media (max-width: 850px) {
+  .popUp {
+    transform: translateY(-30%) !important;
+    -webkit-transform: translateY(-30%) !important;
+    -moz-transform: translateY(-30%) !important;
+    -ms-transform: translateY(-30%) !important;
+    -o-transform: translateY(-30%) !important;
+}
+} */
+
 .popUp .popUpCard {
   background-color: #222;
   width: 670px;
@@ -442,7 +452,7 @@ nav .detels {
 .popUp .popUpCard .image {
   background-color: red;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .popUp .popUpCard .image img {
