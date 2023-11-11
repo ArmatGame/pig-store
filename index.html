@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Tag Store</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand image text-light" href="#">&lt;/TAG&gt;</a>
+          <button
+            class="navbar-toggler text-bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <form class="" role="search">
+              <div class="search my-2 ms-2 ms-5" style="position: relative">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <i
+                  class="fa-sharp fa-solid fa-magnifying-glass text-secondary"
+                ></i>
+                <div
+                  class="research-results"
+                >
+                  
+                </div>
+              </div>
+            </form>
+
+            <ul
+              class="text-light detels"
+              style="list-style: none; margin-left: -90px; margin-top: 18px"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  sections
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Home</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="phone.html">Phones</a></li>
+                  <li>
+                    <a class="dropdown-item" href="laptops.html">Laptops</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="bg-dark">
+              <li class="text-center d-lg-none d-xl-inline-block">
+                <a href="" class="text-decoration-none text-light mx-sm-3"
+                  >Home</a
+                >
+                <a href="" class="text-decoration-none text-light mx-sm-3"
+                  >Phone</a
+                >
+                <a href="" class="text-decoration-none text-light mx-sm-3"
+                  >Laptops</a
+                >
+              </li>
+            </ul>
+            <div class="login-and-signUp-btns d-flex align-items-center ms-5">
+              <button class="login btn btn-light me-2">Sign Up</button>
+              <button class="login btn btn-light">Login</button>
+              <div class="cartCounter">
+                <i
+                  class="fa-solid fa-cart-shopping text-light ms-5 car cart"
+                ></i>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="slider w-100 d-flex overflow-hidden position-relative">
+        <img
+          src="assets/img/image1.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image2.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image3.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image4.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image5.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image6.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <img
+          src="assets/img/image7.jpg"
+          alt="Slider Image"
+          class="slider-image w-100 position-absolute"
+        />
+        <button class="slider-prev position-absolute top-50">&#8249;</button>
+        <button class="slider-next position-absolute top-50">&#8250;</button>
+      </div>
+    </header>
+
+    <div class="cartSlider">
+      <div class="headingCartSlider">
+        <i class="fa-solid fa-xmark"></i>
+        <h2>Cart</h2>
+      </div>
+      <div class="cards"></div>
+    </div>
+
+    <div class="popUp"></div>
+
+    <div
+      class="components d-flex flex-wrap justify-content-center gap-2"
+      id="components"
+    ></div>
+
+    <footer class="mt-5">
+      &copy; Ahmed Elshhat - Ahmed Albablay - Mohamed Ayman
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
